@@ -6,6 +6,7 @@
 	overflow: scroll;
 	transform: translate(-616px);
 	transition: transform 0.5s ease;
+	z-index: 101;
 }
 
 .container_open {
@@ -29,4 +30,14 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: auto;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 100;
 }
